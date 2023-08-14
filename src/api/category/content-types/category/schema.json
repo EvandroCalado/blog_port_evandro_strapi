@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "category"
+    "displayName": "category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -38,6 +39,17 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "mappedBy": "categories"
+    },
+    "color": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 3
     }
   }
 }
